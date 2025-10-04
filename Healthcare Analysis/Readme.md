@@ -1,4 +1,4 @@
-# 🏥 Healthcare Analysis Dashboard – Power BI
+# 🏥 Healthcare Analysis Dashboard
 
 A complete healthcare data visualization project that combines **Patient Medical & Demographic** analysis with **Financial & Operational** insights.  
 
