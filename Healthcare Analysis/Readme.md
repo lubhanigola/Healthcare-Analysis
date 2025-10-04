@@ -8,14 +8,14 @@ A complete healthcare data visualization project that combines **Patient Medical
 
 ## 📸 Screenshots (Preview)
 
-- **Patient Demographics & Medical Insights Dashboard**  
+- **Data Model**  
+  ![Data Model](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Data%20Modelling.png)
+
+  - **Patient Demographics & Medical Insights Dashboard**  
   ![Patient Dashboard](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Patients%20Demographics%20%26%20Medical%20Dashboard.png)
 
 - **Financial & Operational Insights Dashboard**  
   ![Financial Dashboard](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Financial%20%26%20Operational%20Dashboard.png)
-
-- **Data Model**  
-  ![Data Model](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Data%20Modelling.png)
 
 ---
 
