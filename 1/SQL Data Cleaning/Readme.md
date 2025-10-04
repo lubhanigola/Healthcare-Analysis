@@ -9,7 +9,7 @@ The goal is to standardize columns, clean missing/incorrect values, and prepare 
 -- *******************************************************
 
 -- 1) Create Database
-CREATE DATABASE Maven_healthcare;
+CREATE DATABASE project;
 USE Maven_healthcare;
 
 -- 2) Renaming & Standardizing Columns
