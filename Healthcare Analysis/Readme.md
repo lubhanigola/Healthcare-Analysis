@@ -55,9 +55,6 @@ Admission Type
 Discharge Date
 Medication
 Test Results
-
-> **Note:** `Billing Amount` is the only numeric column used for financial calculations. All other columns are categorical or dates.
-
 ---
 
 ## 💡 Business Problem
