@@ -148,7 +148,7 @@ These DAX expressions helped build **dynamic KPIs** that change instantly with f
 
 ---
 
-## 📂 Power BI File  
+## 📂 Explore Project  
 📦 [Download Healthcare Project (.pbix)](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Healthcare%20project.pbix)
 
 ---
