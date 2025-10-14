@@ -1,7 +1,7 @@
 # 🏥 Healthcare Data Analysis using SQL
 
 ## 📘 Project Overview
-This project simulates a **real-world healthcare analytics system** built entirely in **MySQL**.  
+This project simulates a **real-world healthcare analytics system** built in **MySQL**.  
 It focuses on cleaning, structuring, and analyzing hospital-related data to generate valuable insights for better decision-making.
 
 The dataset represents hospital operations, including **patients, providers, departments, diagnosis, insurance, visits, procedures, and city information**.  
