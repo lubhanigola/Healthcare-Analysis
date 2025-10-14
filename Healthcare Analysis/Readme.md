@@ -113,11 +113,8 @@ You can download and explore the **interactive Power BI dashboard (.pbix file)**
 ## 📊 Key Insights
 - 💵 **Total Revenue:** 3M  
 - 👩‍⚕️ **Distinct Patients:** 4973  
-- 💊 **Hypertension** had the highest medication cost.  
 - 🌍 **UK and Ireland** generated maximum state-wise revenue.  
 - 🕒 **Average Length of Stay:** 4.88 days  
-- 😷 **Young Adults** formed the largest patient segment.  
-
 ---
 
 ## 🧠 Learnings & Takeaways
@@ -134,8 +131,6 @@ You can download and explore the **interactive Power BI dashboard (.pbix file)**
 | **MySQL** | Data modeling, cleaning, and querying |
 | **Power BI** | Visualization and analytics |
 | **DAX** | Calculated columns, measures, and date intelligence |
-| **Excel / CSV** | Data inspection and staging |
-| **draw.io / dbdiagram.io** | Schema visualization |
 
 ---
 
