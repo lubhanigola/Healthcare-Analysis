@@ -2,7 +2,7 @@
 
 ## 💭 Why I Chose This Dataset
 Healthcare is one of the **most dynamic and essential sectors** worldwide. It constantly requires data-driven insights to monitor patient trends, operational efficiency, and financial performance.  
-I wanted to explore how **data modeling, SQL, and Power BI** together can transform raw healthcare data into meaningful analytics — enabling hospitals and administrators to make **faster, smarter, and more accurate decisions**.
+I wanted to explore how **SQL, Data Modeling, and Power BI** together can transform raw healthcare data into meaningful analytics — enabling hospitals and administrators to make **faster, smarter, and more accurate decisions**.
 
 ---
 
@@ -10,144 +10,159 @@ I wanted to explore how **data modeling, SQL, and Power BI** together can transf
 
 ### 🧩 SQL Challenges
 While preparing the data model:
-- I found **no primary or foreign keys** in the raw dataset. To resolve this, I analyzed each table to identify columns with **unique values** and created **relationships** manually.  
-- Many columns had incorrect or **text-based data types**. I converted them into the proper types (e.g., INT, DATE, DECIMAL).  
-- **Date columns** such as *Admitted Date*, *Discharge Date*, and *Follow-up Visit Date* contained several null values.  
-  - These couldn’t be replaced with dummy values since they represented **real-world hospital states** (patients still admitted, missed follow-ups, or pending discharges).  
-  - Hence, I preserved them as **NULL** for data integrity and future updates.
+- The dataset had **no primary or foreign keys**, so I analyzed each table to identify unique columns and created **relationships manually**.  
+- Many columns contained **incorrect data types** (stored as text). These were standardized to **INT, DECIMAL, and DATE** formats.  
+- **Date columns** (Admitted, Discharge, and Follow-up Visit Dates) contained several nulls, which I retained as **NULL** instead of imputing — since they represent real hospital scenarios like *ongoing treatments or missed follow-ups*.  
+- Ensured that **data integrity** was maintained throughout by enforcing correct relationships.
 
 ### 💡 Power BI Challenges
-In Power BI:
-- Creating a **Date Table** for time intelligence was tricky — I had to ensure it dynamically covered all `Visit` dates.  
-- Some **slicers didn’t update visuals dynamically**, so I had to carefully choose the ones connected correctly to the relationships.  
-- Designing an interactive landing page that lets users **navigate between dashboards using buttons** required layout experimentation and attention to UX consistency.
+During Power BI development:
+- Creating a dynamic **Date Table using DAX** to handle time-based insights was initially complex.  
+- Some **slicers didn’t respond dynamically**, requiring relationship tuning and filter management.  
+- Designing an interactive **landing page with navigation buttons** between dashboards required UX refinement and visual consistency.  
 
 ---
 
 ## 💼 Business Problem
-Hospitals often struggle to track **key metrics** like patient satisfaction, referral patterns, and treatment efficiency due to scattered data across multiple systems.  
-Without integration:
-- Decision-making becomes **slow and fragmented**  
-- Financial inefficiencies remain **unnoticed**  
-- Operational performance cannot be **benchmarked**  
+Hospitals often face challenges in tracking key KPIs such as **patient satisfaction, average stay duration, and treatment costs**.  
+Due to data scattered across different systems, administrators lack a unified view to:
+- Monitor **operational efficiency**
+- Identify **financial leakages**
+- Optimize **resource utilization**
+- Improve **patient outcomes**
 
-This project solves that by integrating SQL data modeling with Power BI to provide a **unified analytical view** of hospital operations and financial outcomes.
-
----
-
-## 🎯 Project Objective
-- Build a **normalized SQL database** for healthcare operations.  
-- Clean, transform, and relate data across multiple entities such as patients, visits, providers, and diagnoses.  
-- Develop a **Power BI dashboard** with interactive KPIs, filters, and dynamic visuals.  
-- Help hospital administrators monitor **patient trends, satisfaction scores, and revenue** in real time.  
+This project bridges that gap by combining SQL data modeling and Power BI dashboards to deliver a **single source of truth** for hospital operations.
 
 ---
 
-## ⚙️ Project Workflow
+## 🎯 Project Objectives
+- Clean, transform, and normalize healthcare data using **SQL**.  
+- Build a **relational database model** connecting multiple entities (patients, visits, diagnosis, providers, insurance, etc.).  
+- Create an **interactive Power BI dashboard** to monitor both *Operational* and *Financial* metrics.  
+- Enable hospital management to gain real-time insights into **revenue, admissions, and satisfaction trends**.
 
-### **Step 1: SQL Data Preparation**
-- Created tables: **patients, visits, providers, departments, procedures, diagnosis, insurance, cities**.  
-- Assigned **primary and foreign keys** to establish relational integrity.  
-- Cleaned columns and **standardized data types** (e.g., INT, VARCHAR, DATE).  
-- Verified nulls and ensured **logical consistency** for dates and costs.  
-- Exported the final structured data to integrate with Power BI.
+---
 
-### **Step 2: Power BI Development**
-- Imported all SQL tables and created a **Date Table** using DAX.  
-- Established relationships across all dimension and fact tables.  
-- Built two pages in Power BI:
-  - **Healthcare Operations Performance Overview**
-  - **Financial & Operational Insights**
-- Added **buttons for navigation** between dashboards.  
-- Designed visuals including:
-  - KPI Cards (Patient Count, Revenue, Avg Stay, Satisfaction)
-  - Map Visualization (Revenue by State)
-  - Donut, Funnel, and Bar Charts (Diagnosis, Age Group, Referral Source)
-  - Line Charts (Revenue Trends)
+## ⚙️ Tech Stack
+
+| Tool / Technology | Purpose |
+|-------------------|----------|
+| 🟨 **MySQL** | Data Cleaning, Transformation & Relationship Modeling |
+| 🧩 **Power Query Editor** | Data preprocessing inside Power BI |
+| 📊 **Power BI Desktop** | Dashboard Development & Visualization |
+| 🔗 **Data Modeling** | Establishing relations across multiple tables |
+| 🧠 **DAX (Data Analysis Expressions)** | Used for Calculated Measures, KPIs & Date Intelligence |
+
+---
+
+## 🧾 Dataset
+The dataset represents a **multi-department hospital system**, including:
+- Patient demographics  
+- Visit details (admitted, discharged, follow-up dates)  
+- Diagnoses & procedures  
+- Treatment, medication, and room charges  
+- Provider and insurance information  
+- State and city-level data for revenue analysis  
+
+It contains **thousands of records** simulating a real-world hospital’s daily operations and financial transactions.
+
+---
+
+## 💼 Business Problem
+Healthcare organizations face challenges in integrating and analyzing large amounts of clinical and operational data.  
+Without unified analytics:
+- 📉 Resource allocation becomes inefficient  
+- 💸 Revenue leakages go unnoticed  
+- 🩺 Patient satisfaction cannot be benchmarked  
+
+This project aims to provide **data-backed visibility** into hospital operations, helping decision-makers understand patient flow, cost structure, and key KPIs.
+
+---
+
+## ✨ Key Features
+
+### a) **Healthcare Operations Performance Dashboard**
+- **KPI Cards:** Total Patients, Admissions, Discharges, Follow-ups, Satisfaction Score  
+- **Donut Chart:** Patient distribution across Admitted, Discharged, and Follow-up statuses  
+- **Funnel Chart:** Patient flow by Diagnosis  
+- **Bar Chart:** Patients by Age Group  
+- **Column Chart:** Referral Source analysis  
+- **Map Chart:** Revenue by State  
+- **Interactive Buttons:** Navigate between dashboards seamlessly  
+
+### b) **Financial & Operational Insights Dashboard**
+- **KPIs:** Total Revenue, Avg Treatment Cost, Avg Length of Stay, Avg Room Daily Rate  
+- **Trend Visuals:** Month-over-Month Revenue Comparison  
+- **Bar Chart:** Medication Cost by Diagnosis  
+- **Funnel Chart:** Patient Cost Breakdown  
+- **Map View:** Geographic Revenue Concentration  
+
+---
+
+## 🧮 Power BI DAX Highlights
+Several DAX formulas were implemented for calculating performance indicators and date-based intelligence, such as:
+- Total Patients  
+- Total Admissions / Discharges / Follow-ups  
+- Average Treatment Cost per Patient  
+- Average Length of Stay  
+- Total Revenue (Treatment + Medication + Room Charges)  
+- Emergency Visit Percentage  
+- Top 3 Diagnoses by Medication Cost  
+
+These DAX expressions helped build **dynamic KPIs** that change instantly with filters and slicers, ensuring real-time interactivity.
+
+---
+
+## 🗂️ Data Modeling
+- Created **fact** tables (`visits`) and **dimension** tables (`patients`, `diagnosis`, `providers`, `departments`, `insurance`, `cities`).  
+- Added **Date Table** in Power BI for time-based aggregation.  
+- Established **many-to-one relationships** across fact and dimension tables.  
+- Ensured all relationships used **referential integrity** for accurate insights.  
 
 ---
 
 ## 🧱 SQL Data Model  
-**Preview:**  
 ![SQL Data Model](https://github.com/lubhanigola/SQL-Projects/raw/main/Healthcare%20Analysis/SQL%20Data%20Cleaning/SQL%20Data%20Modeling.png)  
-**Accessible Link:** [View SQL Model](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/SQL%20Data%20Cleaning/SQL%20Data%20Modeling.png)
+🔗 [View SQL Model](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/SQL%20Data%20Cleaning/SQL%20Data%20Modeling.png)
 
 ---
 
 ## 🔗 Power BI Data Model  
-**Preview:**  
 ![Power BI Data Model](https://github.com/lubhanigola/SQL-Projects/raw/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Power%20BI%20Data%20Modeling.png)  
-**Accessible Link:** [View Power BI Model](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Power%20BI%20Data%20Modeling.png)
+🔗 [View Power BI Model](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Power%20BI%20Data%20Modeling.png)
 
 ---
 
-## 📋 Dashboard Overview Page  
-**Preview:**  
-![Dashboard Overview](https://github.com/lubhanigola/SQL-Projects/raw/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Dashboard%20Overview.png)  
-**Accessible Link:** [View Overview Page](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Dashboard%20Overview.png)
+## 📊 Dashboard Previews  
 
----
-
-## 🩺 Healthcare Operations Performance Overview  
-**Preview:**  
+### 🩺 Healthcare Operations Performance Overview  
 ![Healthcare Operations Performance Overview](https://github.com/lubhanigola/SQL-Projects/raw/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Healthcare%20Operations%20Performance%20Overview.png)  
-**Accessible Link:** [View Operations Dashboard](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Healthcare%20Operations%20Performance%20Overview.png)
+🔗 [View Dashboard](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Healthcare%20Operations%20Performance%20Overview.png)
 
----
-
-## 💰 Financial & Operational Insights  
-**Preview:**  
+### 💰 Financial & Operational Insights  
 ![Financial & Operational Insights](https://github.com/lubhanigola/SQL-Projects/raw/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Financial%20%26%20Operational%20Insights.png)  
-**Accessible Link:** [View Financial Insights](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Financial%20%26%20Operational%20Insights.png)
+🔗 [View Insights Dashboard](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Financial%20%26%20Operational%20Insights.png)
 
 ---
 
-## 📂 Download Power BI File  
-You can download and explore the **interactive Power BI dashboard (.pbix file)** used in this project.  
-> **File Link:** [Healthcare Project – Power BI File (.pbix)](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Healthcare%20project.pbix)
-
-*(Open the link → Click the “Download raw file” option in GitHub to save the PBIX file locally.)*
+## 📂 Power BI File  
+📦 [Download Healthcare Project (.pbix)](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Healthcare%20project.pbix)
 
 ---
 
-## 📊 Key Insights
+## 📈 Key Insights
 - 💵 **Total Revenue:** 3M  
-- 👩‍⚕️ **Distinct Patients:** 4973  
-- 🌍 **UK and Ireland** generated maximum state-wise revenue.  
+- 👩‍⚕️ **Distinct Patients:** 4,973  
+- 🌍 **Top States:** UK & Ireland lead in revenue contribution  
 - 🕒 **Average Length of Stay:** 4.88 days  
+- 💊 **High-Cost Diagnosis:** Cardiac and Neurology treatments dominate medication expenses  
 ---
 
 ## 🧠 Learnings & Takeaways
-- Developed strong understanding of **data modeling in SQL** and **Power BI integration**.  
-- Improved DAX logic application for **date intelligence and KPIs**.  
-- Learned to maintain data integrity by **handling NULL values thoughtfully**.  
-- Enhanced storytelling and dashboard design using **interactive visuals and navigation**.  
-
+- Strengthened knowledge of **SQL data modeling** and **Power BI integration**  
+- Understood the importance of **handling NULL values** responsibly  
+- Enhanced proficiency in **DAX measures and visual interactivity**  
+- Learned how to design dashboards that tell a **cohesive data story**   
 ---
 
-## 🧰 Tech Stack
-| Tool / Language | Purpose |
-|------------------|----------|
-| **MySQL** | Data modeling, cleaning, and querying |
-| **Power BI** | Visualization and analytics |
-| **DAX** | Calculated columns, measures, and date intelligence |
-
----
-
-## 🚀 Future Improvements
-- Automate SQL data refresh using **Python or Power Automate**  
-- Build **live dashboards** linked directly to the SQL server  
-- Create a **predictive model** for patient readmission analysis using Python  
-- Integrate healthcare data with **external public datasets** (e.g., CDC or WHO metrics)
-
----
-
-## 👩‍💻 Author
-**Name:** Lubhani  
-**Role:** Data Analyst (Healthcare Analytics Project)  
-**Created:** October 2025  
-**Tools:** MySQL | Power BI | DAX | Data Modeling  
-
----
-
-⭐ *If you found this project insightful, don’t forget to star the repository!*
+⭐ *If you found this project insightful, please star the repository and share your feedback!*
