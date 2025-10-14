@@ -135,8 +135,8 @@ These DAX expressions helped build **dynamic KPIs** that change instantly with f
 **Preview:**  
 ![Dashboard Overview](https://raw.githubusercontent.com/lubhanigola/Healthcare-Analysis-SQL-Power-BI-/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Dashboard%20Overview.png)  
 
-**Accessible Link:**  
-[View Overview Page](https://github.com/lubhanigola/Healthcare-Analysis-SQL-Power-BI-/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Dashboard%20Overview.png)
+🔗 [View Insights Dashboard](https://github.com/lubhanigola/Healthcare-Analysis-SQL-Power-BI-/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Dashboard%20Overview.png)
+
 ---
 ### 🩺 Healthcare Operations Performance Overview  
 ![Healthcare Operations Performance Overview](https://github.com/lubhanigola/SQL-Projects/raw/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Healthcare%20Operations%20Performance%20Overview.png)  
