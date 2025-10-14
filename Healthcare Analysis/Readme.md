@@ -48,7 +48,6 @@ This project bridges that gap by combining SQL data modeling and Power BI dashbo
 | Tool / Technology | Purpose |
 |-------------------|----------|
 | 🟨 **MySQL** | Data Cleaning, Transformation & Relationship Modeling |
-| 🧩 **Power Query Editor** | Data preprocessing inside Power BI |
 | 📊 **Power BI Desktop** | Dashboard Development & Visualization |
 | 🔗 **Data Modeling** | Establishing relations across multiple tables |
 | 🧠 **DAX (Data Analysis Expressions)** | Used for Calculated Measures, KPIs & Date Intelligence |
@@ -155,7 +154,7 @@ These DAX expressions helped build **dynamic KPIs** that change instantly with f
 - 👩‍⚕️ **Distinct Patients:** 4,973  
 - 🌍 **Top States:** UK & Ireland lead in revenue contribution  
 - 🕒 **Average Length of Stay:** 4.88 days  
-- 💊 **High-Cost Diagnosis:** Cardiac and Neurology treatments dominate medication expenses  
+- 💊 **High-Cost Diagnosis:** Cardiology treatments dominate medication expenses  
 ---
 
 ## 🧠 Learnings & Takeaways
@@ -164,5 +163,3 @@ These DAX expressions helped build **dynamic KPIs** that change instantly with f
 - Enhanced proficiency in **DAX measures and visual interactivity**  
 - Learned how to design dashboards that tell a **cohesive data story**   
 ---
-
-⭐ *If you found this project insightful, please star the repository and share your feedback!*
