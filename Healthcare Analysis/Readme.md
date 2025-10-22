@@ -166,14 +166,20 @@ It contains **thousands of records** simulating a real-world hospital’s daily 
 ## Use Cases
 
 By consolidating diverse healthcare datasets into interactive dashboards, this project empowers stakeholders to make data-driven decisions that enhance patient care, operational efficiency, and financial management for:
+**🏢 Hospital Administrators & Managers**  
+   - Monitor **patient flow, admissions, and discharges**, track departmental costs, and optimize **resource allocation** for improved operational efficiency.
+     
+**👩‍⚕️ Doctors & Clinical Staff**  
+   - Identify **top diagnoses**, monitor **treatment outcomes**, and plan **age-specific or condition-specific care**, improving **patient outcomes**.
 
-**Hospital Administrators & Managers** → Monitor patient flow, track departmental costs, and optimize resource allocation.  
+**📊 Financial & Operations Teams**  
+   - Analyze **treatment and medication costs**, monitor **insurance coverage**, and evaluate **revenue streams** to guide **budgeting and cost optimization**.
 
-**Doctors & Clinical Staff** → Identify top diagnoses, monitor treatment effectiveness, and improve patient outcomes.  
+**🌍 Policy Makers & Public Health Officials**  
+   - Understand **regional patient demographics, disease prevalence, and hospital utilization patterns** to inform **healthcare policies and resource planning**.
 
-**Policy Makers & Public Health Officials** → Formulate strategies to improve healthcare access, manage chronic diseases, and plan regional health initiatives.  
-
-**Researchers & Analysts** → Study correlations between patient demographics, treatment costs, and healthcare utilization patterns.
+**🧠 Researchers & Analysts**  
+   - Explore **correlations between patient demographics, treatment costs, and service usage**, enabling studies on **healthcare trends and operational efficiency**.
 ---
 
 ## 🧠 Learnings & Takeaways
