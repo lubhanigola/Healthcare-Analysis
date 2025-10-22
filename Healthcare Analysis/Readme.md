@@ -15,12 +15,6 @@ While preparing the data model:
 - **Date columns** (Admitted, Discharge, and Follow-up Visit Dates) contained several nulls, which I retained as **NULL** instead of imputing — since they represent real hospital scenarios like *ongoing treatments or missed follow-ups*.  
 - Ensured that **data integrity** was maintained throughout by enforcing correct relationships.
 
-### 💡 Power BI Challenges
-During Power BI development:
-- Creating a dynamic **Date Table using DAX** to handle time-based insights was initially complex.  
-- Some **slicers didn’t respond dynamically**, requiring relationship tuning and filter management.  
-- Designing an interactive **landing page with navigation buttons** between dashboards required UX refinement and visual consistency.  
-
 ---
 
 ## 💼 Business Problem
@@ -123,33 +117,6 @@ These DAX expressions helped build **dynamic KPIs** that change instantly with f
 ## 🧱 SQL Data Model  
 ![SQL Data Model](https://github.com/lubhanigola/SQL-Projects/raw/main/Healthcare%20Analysis/SQL%20Data%20Cleaning/SQL%20Data%20Modeling.png)  
 🔗 [View SQL Model](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/SQL%20Data%20Cleaning/SQL%20Data%20Modeling.png)
-
----
-
-## 🔗 Power BI Data Model  
-![Power BI Data Model](https://github.com/lubhanigola/SQL-Projects/raw/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Power%20BI%20Data%20Modeling.png)  
-🔗 [View Power BI Model](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Power%20BI%20Data%20Modeling.png)
-
----
-## 📋 Dashboard Overview Page  
-**Preview:**  
-![Dashboard Overview](https://raw.githubusercontent.com/lubhanigola/Healthcare-Analysis-SQL-Power-BI-/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Dashboard%20Overview.png)  
-
-🔗 [View Dashboard](https://github.com/lubhanigola/Healthcare-Analysis-SQL-Power-BI-/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Dashboard%20Overview.png)
-
----
-### 🩺 Healthcare Operations Performance Overview  
-![Healthcare Operations Performance Overview](https://github.com/lubhanigola/SQL-Projects/raw/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Healthcare%20Operations%20Performance%20Overview.png)  
-🔗 [View Insights](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Healthcare%20Operations%20Performance%20Overview.png)
-
-### 💰 Financial & Operational Insights  
-![Financial & Operational Insights](https://github.com/lubhanigola/SQL-Projects/raw/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Financial%20%26%20Operational%20Insights.png)  
-🔗 [View Insights](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Financial%20%26%20Operational%20Insights.png)
-
----
-
-## 📂 Explore Project  
-📦 [Download Healthcare Project (.pbix)](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/Dashboard%20file%20%26%20snapshot/Healthcare%20project.pbix)
 
 ---
 
