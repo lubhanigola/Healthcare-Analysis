@@ -162,6 +162,20 @@ It contains **thousands of records** simulating a real-world hospital’s daily 
 10. **🔁 Repeat Patients**  
     - Highlights the **number of patients with multiple visits**, offering insights into **patient loyalty, follow-up needs, and chronic care management**.
 ---
+
+## Use Cases
+
+By consolidating diverse healthcare datasets into interactive dashboards, this project empowers stakeholders to make data-driven decisions that enhance patient care, operational efficiency, and financial management for:
+
+**Hospital Administrators & Managers** → Monitor patient flow, track departmental costs, and optimize resource allocation.  
+
+**Doctors & Clinical Staff** → Identify top diagnoses, monitor treatment effectiveness, and improve patient outcomes.  
+
+**Policy Makers & Public Health Officials** → Formulate strategies to improve healthcare access, manage chronic diseases, and plan regional health initiatives.  
+
+**Researchers & Analysts** → Study correlations between patient demographics, treatment costs, and healthcare utilization patterns.
+---
+
 ## 🧠 Learnings & Takeaways
 - Strengthened knowledge of **SQL data cleaning, transformation, and relational modeling**  
 - Gained experience in **handling NULL values and data inconsistencies** efficiently  
