@@ -3,7 +3,8 @@
 ## 💭 Why I Chose This Dataset
 Healthcare is one of the **most dynamic and essential sectors** worldwide. It constantly requires data-driven insights to monitor patient trends, operational efficiency, and financial performance.  
 
-This project explores how **SQL** can be leveraged to transform raw healthcare data into meaningful analytics — enabling hospitals and administrators to make **faster, smarter, and more accurate decisions** through efficient querying and data analysis.
+This porject demonstrates how **SQL** can turn raw healthcare data into **actionable insights** for better **decision-making, operational monitoring, and performance analysis**.
+
 ---
 
 ## ⚔️ Struggles I Faced
