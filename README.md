@@ -130,7 +130,6 @@ It contains **thousands of records** simulating a real-world hospital’s daily 
 
 ## 🧱 SQL Data Model  
 ![SQL Data Model](https://github.com/lubhanigola/SQL-Projects/raw/main/Healthcare%20Analysis/SQL%20Data%20Cleaning/SQL%20Data%20Modeling.png)  
-🔗 [View SQL Model](https://github.com/lubhanigola/SQL-Projects/blob/main/Healthcare%20Analysis/SQL%20Data%20Cleaning/SQL%20Data%20Modeling.png)
 
 ---
 
