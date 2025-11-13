@@ -164,7 +164,7 @@ It contains **thousands of records** simulating a real-world hospital’s daily 
    - Compares the **average treatment costs for different room types**, assisting in **pricing strategies and cost management**.
 
 **🔁 Repeat Patients**  
-    - Highlights the **number of patients with multiple visits**, offering insights into **patient loyalty, follow-up needs, and chronic care management**.
+   - Highlights the **number of patients with multiple visits**, assisting in **patient loyalty, follow-up needs, and chronic care management**.
 ---
 
 ## Use Cases
