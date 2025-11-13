@@ -19,35 +19,6 @@ This project demonstrates end-to-end **data analysis, modeling, and reporting** 
 
 ---
 
-## 🎯 Project Objectives
-
-1. **Data Cleaning & Preparation**
-   - Standardize inconsistent column names for clarity.  
-   - Convert date fields using `STR_TO_DATE()` for proper formatting.  
-   - Replace blank fields with `NULL` values.  
-   - Ensure all data types are correctly defined (e.g., `INT`, `DATE`, `VARCHAR`).  
-   - Add derived columns (e.g., `Age_Category`) for segmentation.
-
-2. **Database Design & Relationships**
-   - Design a **Star Schema** where:
-     - `visits` → Fact table  
-     - `patients`, `providers`, `departments`, `diagnosis`, `insurance`, `procedures`, and `cities` → Dimension tables  
-   - Define **Primary Keys** for dimension tables.  
-   - Link tables with **Foreign Keys** in the fact table for referential integrity.  
-
-3. **Data Validation & Quality Checks**
-   - Detect and remove duplicate records.  
-   - Identify and replace blank or null entries.  
-   - Check data completeness and logical consistency (e.g., valid age, admission/discharge dates).  
-
-4. **Analytical SQL Querying**
-   - Derive KPIs such as patient count, total cost, average stay duration, and treatment trends.  
-   - Perform segmentation by age category, diagnosis, insurance provider, and department.  
-   - Identify repeat patients, pending discharges, and emergency cases.  
-   - Generate yearly and monthly performance summaries.
-
----
-
 ## 🛠️ SQL Script for Data Cleaning & Analysis
 
 ```sql
