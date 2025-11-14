@@ -1,4 +1,4 @@
-# 🏥 Healthcare Analysis Dashboard   
+# 🏥 Healthcare Analysis   
 
 ## 💭 Why I Chose This Dataset
 Healthcare is one of the **most dynamic and essential sectors** worldwide. It constantly requires data-driven insights to monitor patient trends, operational efficiency, and financial performance.  
